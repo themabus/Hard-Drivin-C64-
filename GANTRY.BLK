@@ -1,0 +1,1116 @@
+
+rgt0	db 2,0
+	db 4,24
+	dw gant01
+		
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 65,-23	;0
+	db -65,-23	;2
+	db -65,11	;4
+	db -60,11	;6
+	db 65,11	;8
+	db 60,11	;10
+	db 60,-18	;12
+	db -60,-18	;14
+
+	db -58,-17	;16
+	db 58,-17	;18
+	db 58,10	;20
+	db -58,10	;22
+
+
+
+	DB -4,-28	;24
+	db -4,-12	;26
+	db 4,-28	;28
+	db 4,-12	;30
+	db -3,-11	;32
+	db 3,-11	;34
+
+
+
+
+
+	DB -2,-24	;36
+	db -2,-21	;38
+	db 2,-24	;40
+	db 2,-21	;42
+
+
+
+	DB -2,-18	;44
+	db -2,-15	;46
+	db 2,-18	;48
+	db 2,-15	;50
+	db 128,128
+	
+;clockpts	
+
+	db 128,128	
+;*********************************************************	
+
+;          polygon main shape
+
+gant01	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 0		  ;biggest clockwise point
+	db 12,0
+
+!gap00	db 2,14,128
+	
+!gcp00	db 0,12,128
+!gle00
+
+
+;          polygon main shape
+
+gant01a	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 4		  ;biggest clockwise point
+	db 4,2
+
+!gap00	db 2,4,128
+	
+!gcp00	db 2,14,6,128
+!gle00
+
+;*****************************************************
+
+gant02	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 10		  ;biggest anti-clockwise point
+	db 0	 	  ;biggest clockwise point
+	db 8,0
+
+!gap00	db 0,12,10,128
+	
+!gcp00	db 0,8,128
+!gle00
+
+;***********************************
+
+
+gant03	db 0  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 14		  ;biggest anti-clockwise point
+	db 12		  ;biggest clockwise point
+	db 16,12
+
+
+!gap00	db 14,16,128
+	
+!gcp00	db 12,18,128
+!gle00
+;***********************************
+
+gant04	db 4 	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 6		  ;biggest anti-clockwise point
+	db 16		  ;biggest clockwise point
+	db 6,14
+
+
+!gap00	db 14,6,128
+	
+!gcp00	db 14,16,22,6,128
+!gle00	
+;***********************************
+
+
+gant05	db 4  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 18		  ;biggest anti-clockwise point
+	db 10		  ;biggest clockwise point
+	db 10,12
+
+
+!gap00	db 12,18,20,10,128
+	
+!gcp00	db 12,10,128
+!gle00	
+;***********************************
+
+gant06	db 2+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 24		  ;biggest anti-clockwise point
+	db 28		  ;biggest clockwise point
+	db 26,24
+
+!gap00	db 24,26,128
+	
+!gcp00	db 28,30,128
+!gle00	
+;***********************************
+
+
+gant07	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 26		  ;biggest anti-clockwise point
+	db 30		  ;biggest clockwise point
+	db 32,26
+
+
+!gap00	db 26,32,128
+	
+!gcp00	db 30,34,128
+!gle00	
+;***********************************
+
+
+gant08	db 3+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 36		  ;biggest anti-clockwise point
+	db 40		  ;biggest clockwise point
+	db 38,36
+
+
+!gap00	db 36,38,128
+	
+!gcp00	db 40,42,128
+!gle00	
+;***********************************
+
+
+gant09	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 44		  ;biggest anti-clockwise point
+	db 48		  ;biggest clockwise point
+	db 46,44
+
+
+!gap00	db 44,46,128
+	
+!gcp00	db 48,50,128
+!gle00	
+	db 128,128
+;***********************************
+
+
+
+rgt1	db 2,0
+	db 8,28
+	dw gant11
+		
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 62,-24	;0
+	db -51,-20	;2
+	db -51,11	;4
+	db -46,11	;6
+	db 62,15	;8
+	db 57,14	;10
+	db 57,-18	;12
+	db -46,-15	;14
+
+	db -44,-14	;16
+	db 56,-16	;18
+	db 56,12	;20
+	db -44,10	;22
+
+	DB -3,-27	;24
+	db -3,-13	;26
+	db 3,-28	;28
+	db 3,-13	;30
+	db -2,-12	;32
+	db 3,-12	;34
+
+	DB -2,-24	;36
+	db -2,-21	;38
+	db 2,-24	;40
+	db 2,-21	;42
+
+	DB -2,-18	;44
+	db -2,-15	;46
+	db 2,-18	;48
+	db 2,-15	;50
+	db 128,128
+
+;clockpts	
+
+	db 128,128	
+
+
+;*********************************************************	
+
+;          polygon main shape
+
+gant11	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 0		  ;biggest clockwise point
+	db 14,0
+
+!gap00	db 0,2,14,128
+	
+!gcp00	db 0,12,14,128
+!gle00
+
+;*******************
+;          polygon main shape
+
+gant11a	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 6		  ;biggest clockwise point
+	db 4,2
+
+!gap00	db 2,4,128
+	
+!gcp00	db 2,14,6,128
+!gle00
+
+;*****************************************************
+
+gant12	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 10		  ;biggest anti-clockwise point
+	db 0	 	  ;biggest clockwise point
+	db 8,0
+ 
+!gap00	db 0,12,10,128
+	
+!gcp00	db 0,8,128
+!gle00
+
+;***********************************
+
+
+gant13	db 0  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 14		  ;biggest anti-clockwise point
+	db 12		  ;biggest clockwise point
+	db 16,12
+	
+!gap00	db 12,14,16,128
+	
+!gcp00	db 12,18,16,128
+!gle00
+;***********************************
+
+gant14	db 4 	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 6		  ;biggest anti-clockwise point
+	db 16		  ;biggest clockwise point
+	db 6,14
+
+!gap00	db 14,6,128
+	
+!gcp00	db 14,16,22,6,128
+!gle00	
+;***********************************
+gant15	db 4  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 18		  ;biggest anti-clockwise point
+	db 10		  ;biggest clockwise point
+	db 10,12
+
+!gap00	db 12,18,20,10,128
+	
+!gcp00	db 12,10,128
+!gle00	
+;***********************************
+
+gant16	db 2+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 24		  ;biggest anti-clockwise point
+	db 28		  ;biggest clockwise point
+	db 26,28
+
+!gap00	db 28,24,26,128
+	
+!gcp00	db 28,30,26,128
+!gle00
+;***********************************
+gant17	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 26		  ;biggest anti-clockwise point
+	db 30		  ;biggest clockwise point
+	db 32,26
+
+!gap00	db 26,32,34,128
+	
+!gcp00	db 30,34,128
+!gle00	
+;***********************************
+
+gant18	db 3+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 36		  ;biggest anti-clockwise point
+	db 40		  ;biggest clockwise point
+	db 38,36
+
+!gap00	db 36,38,128
+	
+!gcp00	db 40,42,128
+!gle00	
+;***********************************
+
+gant19	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 44		  ;biggest anti-clockwise point
+	db 48		  ;biggest clockwise point
+	db 46,44
+
+!gap00	db 44,46,128
+	
+!gcp00	db 48,50,128
+!gle00	
+	db 128,128
+;***********************************
+rgt2	db 2,22
+	db 8,30
+	dw gant21
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 70,-28	;0
+	db -47,-19	;2
+	db -47,10	;4
+	db -43,11	;6
+	db 70,17	;8
+	db 64,16	;10
+	db 64,-21	;12
+	db -43,-15	;14
+
+	db -40,-13	;16
+	db 64,-19	;18
+	db -40,9	;20
+	db 72,-26	;22
+
+	DB 72,16	;24
+
+	;box
+	db -4,-28	;26
+	db -4,-11	;28
+	db 3,-29	;30
+	db 3,-11	;32
+	db 4,-27	;34
+
+	DB 4,-10	;36
+	db -3,-10	;38
+	; lights
+	db -3,-26	;40
+	db -3,-22	;42
+
+	DB 2,-27	;44
+	db 2,-22	;46
+	db -3,-17	;48
+	db -3,-12	;50
+
+	db 2,-18	;52
+	db 2,-12	;54
+	db 128,128
+
+
+;clockpts	
+
+	db 128,128	
+
+
+;*********************************************************	
+
+;          polygon main shape
+
+gant21	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 0		  ;biggest clockwise point
+	db 14,0
+
+!gap00	db 0,2,14,128
+	
+!gcp00	db 0,12,14,128
+!gle00
+
+;*******************
+;          polygon main shape
+
+gant21a	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 10		  ;biggest anti-clockwise point
+	db 0		  ;biggest clockwise point
+	db 8,0
+
+!gap00	db 0,12,10,8,128
+	
+!gcp00	db 0,8,128
+!gle00
+
+;*****************************************************
+
+gant22	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 6	 	  ;biggest clockwise point
+	db 6,2
+
+!gap00	db 2,4,6,128
+	
+!gcp00	db 2,14,6,128
+!gle00
+
+;***********************************
+
+
+gant23	db 0  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 14		  ;biggest anti-clockwise point
+	db 12		  ;biggest clockwise point
+	db 16,12
+
+!gap00	db 12,14,16,128
+	
+!gcp00	db 12,18,16,128
+!gle00
+;***********************************
+
+gant24	db 4 	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 6		  ;biggest anti-clockwise point
+	db 16		  ;biggest clockwise point
+	db 6,14
+
+!gap00	db 14,6,128
+	
+!gcp00	db 14,16,20,6,128
+!gle00	
+;***********************************
+gant25	db 0  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 0		  ;biggest anti-clockwise point
+	db 22		  ;biggest clockwise point
+	db 8,0
+
+!gap00	db 0,8,128
+	
+!gcp00	db 0,22,24,8,128
+!gle00
+	
+;***********************************
+
+gant26	db 2+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 26		  ;biggest anti-clockwise point
+	db 30		  ;biggest clockwise point
+	db 28,30
+
+!gap00	db 30,26,28,128
+	
+!gcp00	db 30,32,28,128
+!gle00
+;***********************************
+gant27	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 30		  ;biggest anti-clockwise point
+	db 34		  ;biggest clockwise point
+	db 36,30
+
+!gap00	db 30,32,36,128
+	
+!gcp00	db 30,34,36,128
+!gle00
+		
+;***********************************
+
+gant28	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 28		  ;biggest anti-clockwise point
+	db 36		  ;biggest clockwise point
+	db 36,28
+
+!gap00	db 32,28,38,128
+	
+!gcp00	db 32,36,38,128
+!gle00	
+
+;***********************************
+
+gant29	db 3+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 40		  ;biggest anti-clockwise point
+	db 44		  ;biggest clockwise point
+	db 42,44
+
+!gap00	db 44,40,42,46,128
+	
+!gcp00	db 44,46,128
+!gle00	
+;***********************************
+
+gant210	db 0+64  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 48		  ;biggest anti-clockwise point
+	db 52		  ;biggest clockwise point
+	db 50,48
+
+!gap00	db 52,48,50,54,128
+	
+!gcp00	db 52,54,128
+!gle00	
+	db 128,128
+;***********************************
+
+
+rgt3	db 2,22
+	db 8,30
+	dw gant21
+		
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 74,-32	;0
+	db -41,-17	;2
+	db -41,10	;4
+	db -39,11	;6
+	db 74,19	;8
+	db 67,17	;10
+	db 67,-24	;12
+	db -39,-13	;14
+
+	db -38,-12	;16
+	db 67,-21	;18
+	db -38,10	;20
+	db 75,-31	;22
+
+	DB 75,18	;24
+
+	;box
+	db -4,-27	;26
+	db -4,-10	;28
+	db 3,-29	;30
+	db 3,-10	;32
+	db 4,-26	;34
+
+	DB 4,-9	;36
+	db -3,-9	;38
+	; lights
+	db -3,-26	;40
+	db -3,-22	;42
+
+	DB 2,-28	;44
+	db 2,-22	;46
+	db -3,-17	;48
+	db -3,-12	;50
+
+	db 2,-18	;52
+	db 2,-12	;54
+
+	db 128,128
+;clockpts	
+
+	db 128,128	
+;************************************
+
+
+rgt4	db 2,22
+	db 8,30
+	dw gant21
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 80,-36	;0
+	db -35,-16	;2
+	db -35,9	;4
+	db -33,10	;6
+	db 80,21	;8
+	db 70,19	;10
+	db 70,-26	;12
+	db -33,-12	;14
+
+	db -29,-11	;16
+	db 70,-24	;18
+	db -29,9	;20
+	db 81,-35	;22
+
+	DB 81,20	;24
+
+	;box
+	db -4,-27	;26
+	db -4,-9	;28
+	db 3,-29	;30
+	db 3,-10	;32
+	db 4,-26	;34
+
+	DB 4,-9	;36
+	db -3,-8	;38
+	; lights
+	db -3,-26	;40
+	db -3,-22	;42
+
+	DB 2,-28	;44
+	db 2,-22	;46
+	db -3,-17	;48
+	db -3,-12	;50
+
+	db 2,-18	;52
+	db 2,-12	;54
+
+	db 128,128
+;clockpts	
+
+	db 128,128	
+;************************************
+
+
+rgt5	db 2,22
+	db 8,30
+	dw gant21
+		
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 85,-42	;0
+	db -31,-15	;2
+	db -31,8	;4
+	db -27,8	;6
+	db 85,24	;8
+	db 74,22	;10
+	db 74,-29	;12
+	db -27,-11	;14
+
+	db -26,-10	;16
+	db 74,-27	;18
+	db -26,7	;20
+	db 89,-39	;22
+
+	DB 89,23	;24
+
+	;box 5
+	db -4,-27	;26
+	db -4,-9	;28
+	db 3,-29	;30
+	db 3,-10	;32
+	db 4,-26	;34
+
+	DB 4,-9	;36
+	db -3,-8	;38
+	; lights
+	db -3,-26	;40
+	db -3,-22	;42
+
+	DB 2,-28	;44
+	db 2,-22	;46
+	db -3,-17	;48
+	db -3,-12	;50
+
+	db 2,-18	;52
+	db 2,-12	;54
+
+	db 128,128
+;clockpts	
+
+	db 128,128	
+;************************************
+
+
+rgt6	db 2,22
+	db 8,30
+	dw gant21
+		
+;****************************************************
+;		gantry points
+;antipts
+
+	DB 90,-48	;0
+	db -26,-14	;2
+	db -26,8	;4
+	db -24,9	;6
+	db 90,28	;8
+	db 74,25	;10
+	db 74,-33	;12
+	db -24,-10	;14
+
+	db -23,-9	;16
+	db 74,-31	;18
+	db -23,8	;20
+	db 94,-46	;22
+
+	DB 94,26	;24
+
+	;box 6
+	db -3,-27	;26
+	db -3,-9	;28
+	db 2,-29	;30
+	db 2,-10	;32
+	db 4,-26	;34
+
+	DB 4,-9	;36
+	db -3,-9	;38
+	; lights
+	db -1,-26	;40
+	db -1,-22	;42
+
+	DB 1,-28	;44
+	db 1,-22	;46
+	db -1,-17	;48
+	db -1,-12	;50
+
+	db 1,-18	;52
+	db 1,-12	;54
+
+	db 128,128
+;clockpts	
+
+	db 128,128	
+;************************************
+
+
+gantryd
+
+	dw rgt0
+	db 0,0
+
+	dw rgt1
+	db 0,0
+
+	dw rgt2
+	db 0,0
+
+
+	dw rgt3
+	db 0,0
+
+
+	dw rgt4
+	db 0,0
+
+
+	dw rgt5
+	db 0,0
+
+
+
+	dw rgt6
+	db 0,0
+
+;*********************
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+;**********************
+
+
+;*********************
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt5
+	db 0,0
+
+;**********************
+
+
+	dw rgt6
+	db 1,0
+
+	dw rgt5
+	db 0,0
+
+	dw rgt4
+	db 1,0
+
+	dw rgt3
+	db 1,0
+
+
+	dw rgt2
+	db 1,0
+
+	dw rgt1
+	db 1,0
+
+
+;**********************************
+gantry2d
+
+	dw rgt0
+	db $80,0
+
+	dw rgt1
+	db $80,0
+
+	dw rgt2
+	db $80,0
+
+
+	dw rgt3
+	db $80,0
+
+	dw rgt4
+	db $80,0
+
+	dw rgt5
+	db $80,0
+
+	dw rgt6
+	db $80,0
+
+;*********************
+
+	dw rgt6
+	db 0,0
+
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+;*********************
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+	dw rgt6
+	db 0,0
+
+;*********************
+	dw rgt6
+	db $81,0
+
+	dw rgt5
+	db $81,0
+
+	dw rgt4
+	db $81,0
+
+	dw rgt3
+	db $81,0
+
+
+	dw rgt2
+	db $81,0
+
+	dw rgt1
+	db $81,0

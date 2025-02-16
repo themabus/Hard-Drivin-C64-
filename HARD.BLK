@@ -1,0 +1,2322 @@
+
+rc0
+	db 0,0,0,0
+	dw car01
+		
+;****************************************************
+;		car points model rc0
+;antipointers
+
+	db	21,-19	;0
+	db	-14,-19	;2
+	db	-16,-6	;4
+	db	-23,0	;6
+	db	-23,20	;8
+	db	-20,3	;10
+	db	-20,9	;12
+	db	-20,20	;14
+	db	-20,23	;16
+	db	14,3	;18
+	db	14,9	;20
+	db	23,20	;22
+	db	23,23	;24
+
+	
+	db 128,128
+	
+;clockpts	
+	db	23,-6	;64
+	db	29,0	;66
+	db	30,20	;68
+	db	-9,3	;70
+	db	-9,9	;72
+	db	-16,20	;74
+	db	-16,23	;76
+	db	26,3	;78
+	db	26,9	;80
+	db	28,20	;82
+	db	28,23	;84
+
+
+	db 128,128	
+;*********************************************************	
+
+;          shape 1
+
+car01	db 0  	;fill pattern
+	db ccp01-cap01    ;number of bytes in ANTIPTRS
+	db cle01-ccp01    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+
+
+cap01	db 2,4,128
+	
+ccp01	db 0,64,128
+cle01
+
+	
+;********************************
+
+
+;          shape2
+
+car02	db 2  	;fill pattern
+	db ccp02-cap02    ;number of bytes in ANTIPTRS
+	db cle02-ccp02    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap02	db 4,6,128
+	
+ccp02	db 64,66,128
+cle02
+	
+;********************************
+
+
+;          shape 3
+
+car03	db 4 	;fill pattern
+	db ccp03-cap03    ;number of bytes in ANTIPTRS
+	db cle03-ccp03    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap03	db 6,8,68,128
+	
+ccp03	db 66,68,128
+cle03
+	
+;********************************
+
+
+;          shape 4
+
+car04	db 0  	;fill pattern
+	db ccp04-cap04    ;number of bytes in ANTIPTRS
+	db cle04-ccp04    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap04	db 70,10,12,72,128
+	
+ccp04	db 70,72,128
+cle04
+;********************************
+
+
+;          shape 5
+
+car05	db 0  	;fill pattern
+	db ccp05-cap05    ;number of bytes in ANTIPTRS
+	db cle05-ccp05    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap05	db 78,18,20,80,128
+	
+ccp05	db 78,80,128
+cle05
+
+;********************************
+
+
+;          shape 6
+
+car06	db 0  	;fill pattern
+	db ccp06-cap06    ;number of bytes in ANTIPTRS
+	db cle06-ccp06    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap06	db 74,14,16,76,128
+	
+ccp06	db 74,76,128
+cle06
+
+;********************************
+
+;          shape 7
+
+car07	db 0  	;fill pattern
+	db ccp07-cap07    ;number of bytes in ANTIPTRS
+	db cle07-ccp07    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap07	db 82,22,24,84,128
+	
+ccp07	db 82,84,128
+cle07
+
+;********************************
+
+	db 128,128
+;******************************
+
+
+
+rc0a
+	dw 0,0
+	dw car01
+		
+;****************************************************
+;		car points model rc0a
+;antipointers
+
+	db	20,-19	;0
+	db	-15,-19	;2
+	db	-18,-6	;4
+	db	-30,0	;6
+	db	-31,19	;8
+	db	-28,2	;10
+	db	-28,9	;12
+	db	-26,19	;14
+	db	-26,23	;16
+	db	4,2	;18
+	db	4,9	;20
+	db	13,20	;22
+	db	13,23	;24
+
+	
+	db 128,128
+	
+;clockpts	
+	db	20,-6	;64
+	db	20,0	;66
+	db	19,20	;68
+	db	-18,2	;70
+	db	-18,9	;72
+	db	-20,19	;74
+	db	-20,22	;76
+	db	17,2	;78
+	db	17,9	;80
+	db	17,20	;82
+	db	17,23	;84
+
+
+	db 128,128	
+;*********************************************************	
+
+
+
+rc1
+	dw 0,0	
+	dw car11
+		
+;****************************************************
+;		car points model rc1
+;antipointers
+
+	db	18,-19	;0
+	db	-14,-19	;2
+	db	-19,-6	;4
+	db	-36,0	;6
+	db	-37,17	;8
+	db	-34,1	;10
+	db	-34,7	;12
+	db	-5,2	;14
+	db	-5,8	;16
+	db	13,11	;18
+	db	12,14	;20
+	db	12,20	;22
+	db	13,24	;24
+	db	23,4	;26
+	db	22,6	;28
+	db	22,9	;30
+	DB	-30,18	;32
+	db	-29,20	;34
+	db	-25,18	;36
+	db	-25,20	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	16,-6	;64
+	db	10,0	;66
+	db	9,20	;68
+	db	-26,1	;70
+	db	-26,7	;72
+	db	7,2	;74
+	db	7,9	;76
+	db	23,-16	;78
+	db	23,-7	;80
+	db	25,-6	;82
+	db	25,5	;84
+	db	15,14	;86
+	db	15,20	;88
+	db	24,5	;90
+	db	24,9	;92
+	db	23,12	;94
+
+
+
+
+	db 128,128	
+
+;*********************************************************	
+
+;          shape 1
+
+car11	db 0  	;fill pattern
+	db ccp11-cap11    ;number of bytes in ANTIPTRS
+	db cle11-ccp11    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap11	db 0,2,4,64,128
+	
+ccp11	db 0,64,128
+cle11
+	
+	
+;********************************
+
+
+;          shape2
+
+car12	db 2  	;fill pattern
+	db ccp12-cap12    ;number of bytes in ANTIPTRS
+	db cle12-ccp12    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap12	db 64,4,6,66,128
+	
+ccp12	db 64,66,128
+cle12
+		
+;********************************
+
+
+;          shape 3
+
+car13	db 4 	;fill pattern
+	db ccp13-cap13    ;number of bytes in ANTIPTRS
+	db cle13-ccp13    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap13	db 6,8,68,128
+	
+ccp13	db 6,66,68,128
+cle13	
+;********************************
+
+
+;          shape 4
+
+car14	db 0  	;fill pattern
+	db ccp14-cap14    ;number of bytes in ANTIPTRS
+	db cle14-ccp14    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap14	db 70,10,12,72,128
+	
+ccp14	db 70,72,128
+cle14
+;********************************
+
+
+;          shape 5
+
+car15	db 0  	;fill pattern
+	db ccp15-cap15    ;number of bytes in ANTIPTRS
+	db cle15-ccp15    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap15	db 74,14,16,76,128
+	
+ccp15	db 74,76,128
+cle15
+
+;********************************
+
+
+;          shape 6
+
+car16	db 2  	;fill pattern
+	db ccp16-cap16    ;number of bytes in ANTIPTRS
+	db cle16-ccp16    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap16	db 0,64,128
+	
+ccp16	db 0,78,80,64,128
+cle16
+
+;********************************
+
+;          shape 7
+
+car17	db 3  	;fill pattern
+	db ccp17-cap17    ;number of bytes in ANTIPTRS
+	db cle17-ccp17    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap17	db 80,64,66,68,128
+	
+ccp17	db 80,82,84,68,128
+cle17
+;***************************************
+;	shape  8
+	
+
+
+car18	db 0  	;fill pattern
+	db ccp18-cap18    ;number of bytes in ANTIPTRS
+	db cle18-ccp18    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap18	db 18,20,22,24,128
+	
+ccp18	db 18,86,88,24,128
+cle18
+;***************************************
+
+
+;	shape  9
+	
+
+
+car19	db 0  	;fill pattern
+	db ccp19-cap19    ;number of bytes in ANTIPTRS
+	db cle19-ccp19    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap19	db 26,28,30,94,128
+	
+ccp19	db 26,90,92,94,128
+cle19
+;***************************************
+
+
+;	shape  10
+	
+
+
+car110	db 0  	;fill pattern
+	db ccp110-cap110    ;number of bytes in ANTIPTRS
+	db cle110-ccp110    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap110	db 36,32,34,38,128
+	
+ccp110	db 36,38,128
+cle110
+
+	db 128,128
+;******************************
+
+
+rc1A	
+	dw 0,0
+	dw car11
+		
+;****************************************************
+;		car points model rc1a
+;antipointers
+
+	db	16,-19	;0
+	db	-14,-18	;2
+	db	-20,-6	;4
+	db	-40,-1	;6
+	db	-42,16	;8
+	db	-39,1	;10
+	db	-39,6	;12
+	db	-14,3	;14
+	db	-14,9	;16
+	db	8,11	;18
+	db	5,15	;20
+	db	5,20	;22
+	db	7,23	;24
+	db	26,3	;26
+	db	24,6	;28
+	db	24,9	;30
+
+	DB	-35,17	;32
+	db	-34,19	;34
+	db	-31,17	;36
+	db	-31,19	;38
+
+
+
+	
+	db 128,128
+	
+;clockpts	
+	db	13,-6	;64
+	db	0,1	;66
+	db	-1,20	;68
+	db	-32,1	;70
+	db	-32,7	;72
+	db	-3,3	;74
+	db	-3,10	;76
+	db	25,-17	;78
+	db	26,-7	;80
+	db	29,-5	;82
+	db	29,4	;84
+	db	10,15	;86
+	db	10,19	;88
+	db	27,5	;90
+	db	27,9	;92
+	db	26,11	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+
+
+
+rc2
+	dw 0,0
+	dw car11
+		
+;****************************************************
+;		car points model rc2
+;antipointers
+
+	db	14,-19	;0
+	db	-14,-18	;2
+	db	-21,-6	;4
+	db	-43,-2	;6
+	db	-44,14	;8
+	db	-41,1	;10
+	db	-41,4	;12
+	db	-22,2	;14
+	db	-22,7	;16
+	db	1,12	;18
+	db	-2,15	;20
+	db	-2,20	;22
+	db	1,22	;24
+	db	29,3	;26
+	db	27,6	;28
+	db	27,9	;30
+
+
+	DB	-38,15	;32
+	db	-37,17	;34
+	db	-34,15	;36
+	db	-34,17	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	9,-6	;64
+	db	-9,0	;66
+	db	-11,19	;68
+	db	-36,1	;70
+	db	-36,6	;72
+	db	-12,2	;74
+	db	-12,9	;76
+	db	27,-16	;78
+	db	28,-7	;80
+	db	33,-6	;82
+	db	33,4	;84
+	db	3,14	;86
+	db	3,19	;88
+	db	31,5	;90
+	db	31,8	;92
+	db	29,11	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+rc2a
+	dw 0,0
+	dw car11
+
+
+;		car points model rc2a
+;antipointers
+
+	db	11,-19	;0
+	db	-14,-18	;2
+	db	-21,-6	;4
+	db	-46,-2	;6
+	db	-47,14	;8
+	db	-44,1	;10
+	db	-44,4	;12
+	db	-30,3	;14
+	db	-30,7	;16
+	db	-5,12	;18
+	db	-8,15	;20
+	db	-8,22	;22
+	db	-5,23	;24
+	db	32,4	;26
+	db	30,6	;28
+	db	30,11	;30
+
+
+	DB	32,-5	;32
+	db	32,-3	;34
+	db	33,-5	;36
+	db	33,-3	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	6,-6	;64
+	db	-20,0	;66
+	db	-21,20	;68
+	db	-42,1	;70
+	db	-42,5	;72
+	db	-22,3	;74
+	db	-22,9	;76
+	db	29,-16	;78
+	db	30,-7	;80
+	db	36,-6	;82
+	db	37,5	;84
+	db	-3,13	;86
+	db	-3,21	;88
+	db	34,6	;90
+	db	34,10	;92
+	db	32,12	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+
+
+rc3
+	dw 0,0
+	dw car11
+
+;		car points model rc3
+;antipointers
+
+	db	10,-19	;0
+	db	-12,-18	;2
+	db	-21,-6	;4
+	db	-48,-3	;6
+	db	-50,13	;8
+	db	-46,0	;10
+	db	-46,3	;12
+	db	-35,1	;14
+	db	-35,5	;16
+	db	-11,12	;18
+	db	-15,15	;20
+	db	-15,21	;22
+	db	-11,23	;24
+	db	34,4	;26
+	db	32,7	;28
+	db	32,12	;30
+
+
+	DB	34,-5	;32
+	db	34,-3	;34
+	db	35,-5	;36
+	db	35,-3	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	3,-6	;64
+	db	-26,-1	;66
+	db	-29,19	;68
+	db	-44,0	;70
+	db	-44,4	;72
+	db	-30,1	;74
+	db	-30,7	;76
+	db	31,-17	;78
+	db	32,-7	;80
+	db	41,-6	;82
+	db	41,8	;84
+	db	-8,14	;86
+	db	-8,21	;88
+	db	36,6	;90
+	db	36,10	;92
+	db	34,13	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+
+
+
+rc3A
+	dw 0,0
+	dw car11
+
+
+;		car points model rc3a
+;antipointers
+
+	db	7,-19	;0
+	db	-11,-17	;2
+	db	-19,-6	;4
+	db	-48,-3	;6
+	db	-50,13	;8
+	db	-49,-0	;10
+	db	-49,3	;12
+	db	-41,2	;14
+	db	-41,6	;16
+	db	-17,12	;18
+	db	-21,15	;20
+	db	-21,21	;22
+	db	-17,23	;24
+	db	36,5	;26
+	db	34,7	;28
+	db	33,13	;30
+
+
+	DB	34,-4	;32
+	db	34,-2	;34
+	db	35,-4	;36
+	db	35,-2	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	-1,-6	;64
+	db	-34,-1	;66
+	db	-36,18	;68
+	db	-47,-0	;70
+	db	-46,4	;72
+	db	-36,2	;74
+	db	-36,7	;76
+	db	32,-17	;78
+	db	34,-6	;80
+	db	45,-5	;82
+	db	45,8	;84
+	db	-12,14	;86
+	db	-12,20	;88
+	db	38,7	;90
+	db	38,12	;92
+	db	36,14	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+
+
+
+
+
+rc4
+	dw 0,0
+	dw car11
+
+
+;		car points model rc4
+;antipointers
+
+	db	5,-19	;0
+	db	-9,-17	;2
+	db	-18,-6	;4
+	db	-48,-3	;6
+	db	-50,12	;8
+	db	-46,-0	;10
+	db	-46,3	;12
+	db	-43,1	;14
+	db	-43,5	;16
+	db	-21,11	;18
+	db	-26,13	;20
+	db	-26,20	;22
+	db	-22,22	;24
+	db	37,6	;26
+	db	34,8	;28
+	db	34,13	;30
+
+
+	DB	34,-4	;32
+	db	34,-2	;34
+	db	35,-4	;36
+	db	35,-2	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	-5,-6	;64
+	db	-39,-1	;66
+	db	-42,17	;68
+	db	-45,-0	;70
+	db	-45,4	;72
+	db	-42,0	;74
+	db	-42,6	;76
+	db	33,-17	;78
+	db	36,-6	;80
+	db	48,-5	;82
+	db	48,9	;84
+	db	-17,13	;86
+	db	-17,20	;88
+	db	40,7	;90
+	db	40,12	;92
+	db	38,14	;94
+
+
+	db 128,128	
+
+;*************************************
+rc4A
+
+	dw 0,0
+	dw car11
+
+
+;		car points model rc4a
+;antipointers
+
+	db	0,-19	;0
+	db	-8,-16	;2
+	db	-17,-6	;4
+	db	-46,-2	;6
+	db	-48,11	;8
+	db	-46,2	;10
+	db	-46,3	;12
+	db	-46,2	;14
+	db	-46,3	;16
+	db	-26,11	;18
+	db	-31,13	;20
+	db	-31,20	;22
+	db	-26,22	;24
+	db	37,8	;26
+	db	34,9	;28
+	db	34,15	;30
+
+
+	DB	34,-4	;32
+	db	34,-2	;34
+	db	35,-4	;36
+	db	35,-2	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	-8,-6	;64
+	db	-44,-1	;66
+	db	-47,16	;68
+	db	-45,2	;70
+	db	-45,3	;72
+	db	-45,2	;74
+	db	-45,3	;76
+	db	32,-17	;78
+	db	34,-6	;80
+	db	50,-4	;82
+	db	50,10	;84
+	db	-22,13	;86
+	db	-22,20	;88
+	db	40,9	;90
+	db	40,14	;92
+	db	37,16	;94
+
+
+	db 128,128	
+;*********************************************************	
+
+
+RC5
+	dw 0,0	
+	dw car51
+
+
+;		car points model rc5
+;antipointers
+
+	db	-3,-18	;0
+	db	-8,-16	;2
+	db	-16,-6	;4
+	db	-46,-1	;6
+	db	-50,14	;8
+	db	-12,-5	;10
+	db	-30,11	;12
+	db	-35,13	;14
+	db	-35,19	;16
+	db	-30,21	;18
+	db	-25,13	;20
+	db	-25,19	;22
+	db	37,8	;24
+	db	33,10	;26
+	db	33,14	;28
+	db	37,16	;30
+	DB	41,10	;32
+	db	41,14	;34
+
+	
+	db 128,128
+	
+;clockpts	
+	db	32,-17	;64
+	db	35,-6	;66
+	db	51,-3	;68
+	db	51,11	;70
+	db	36,-4	;72
+	db	36,-2	;74
+	db	38,-4	;76
+	db	38,-2	;78
+	 
+	db 128,128	
+
+;****************************************
+
+;          shape 1
+
+car51	db 0  	;fill pattern
+	db ccp51-cap51    ;number of bytes in ANTIPTRS
+	db cle51-ccp51    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap51	db 0,2,4,10,128
+	
+ccp51	db 0,10,128
+cle51
+		
+	
+;********************************
+
+
+;          shape2
+
+car52	db 2  	;fill pattern
+	db ccp52-cap52    ;number of bytes in ANTIPTRS
+	db cle52-ccp52    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap52	db 4,6,66,128
+	
+ccp52	db 4,10,6,128
+cle52
+			
+;********************************
+
+
+;          shape 3
+
+car53	db 2 	;fill pattern
+	db ccp53-cap53    ;number of bytes in ANTIPTRS
+	db cle53-ccp53    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap53	db 0,10,128
+	
+ccp53	db 0,64,66,10,128
+cle53
+
+	
+;********************************
+
+
+;          shape 4
+
+car54	db 3  	;fill pattern
+	db ccp54-cap54    ;number of bytes in ANTIPTRS
+	db cle54-ccp54    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap54	db 66,10,6,8,128
+	
+ccp54	db 66,68,70,8,128
+cle54
+	
+;********************************
+
+
+;          shape 5
+
+car55	db 0  	;fill pattern
+	db ccp55-cap55    ;number of bytes in ANTIPTRS
+	db cle55-ccp55    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap55	db 12,14,16,18,128
+	
+ccp55	db 12,20,22,18,128
+cle55
+
+;********************************
+
+
+;          shape 6
+
+car56	db 0  	
+	db ccp56-cap56   
+	db cle56-ccp56  
+	db 0,0,0,0	
+cap56	db 24,26,28,30,128
+	
+ccp56	db 24,32,34,30,128
+cle56
+
+	
+;********************************
+
+;          shape 7
+
+car57	db 0  	;fill pattern
+	db ccp57-cap57    ;number of bytes in ANTIPTRS
+	db cle57-ccp57    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap57	db 72,74,128
+	
+ccp57	db 72,76,78,74,128
+cle57
+
+	db 128,128
+;******************************
+
+
+
+RC5a
+	dw 0,0	
+	dw car51
+
+
+;		car points model rc5a
+;antipointers
+
+	db	-3,-18	;0
+	db	-4,-17	;2
+	db	-15,-6	;4
+	db	-48,-2	;6
+	db	-50,13	;8
+	db	-12,-5	;10
+	db	-32,9	;12
+	db	-38,11	;14
+	db	-38,17	;16
+	db	-32,19	;18
+	db	-27,11	;20
+	db	-27,17	;22
+	db	38,9	;24
+	db	34,10	;26
+	db	33,15	;28
+	db	38,18	;30
+	DB	42,11	;32
+	db	42,15	;34
+
+	
+	db 128,128
+	
+;clockpts	
+	db	31,-17	;64
+	db	35,-6	;66
+	db	52,-3	;68
+	db	52,12	;70
+	db	37,-2	;72
+	db	37,-4	;74
+	db	39,-2	;76
+	db	39,-4	;78
+	 
+
+
+
+
+	db 128,128	
+
+
+
+
+
+RC6
+	dw 0,0
+	dw car51
+
+;*******************************************
+;		car points model rc6
+;antipointers
+
+	db	-7,-18	;0
+	db	-8,-18	;2
+	db	-16,-6	;4
+	db	-48,-3	;6
+	db	-50,13	;8
+	db	-15,-6	;10
+	db	-34,8	;12
+	db	-38,11	;14
+	db	-38,17	;16
+	db	-34,18	;18
+	db	-28,11	;20
+	db	-28,17	;22
+	db	38,8	;24
+	db	34,11	;26
+	db	34,17	;28
+	db	38,18	;30
+	DB	42,11	;32
+	db	42,17	;34
+
+	
+	db 128,128
+	
+;clockpts	
+	db	32,-18	;64
+	db	37,-6	;66
+	db	56,-4	;68
+	db	56,13	;70
+	db	37,-2	;72
+	db	37,-4	;74
+	db	39,-2	;76
+	db	39,-4	;78
+	 
+
+
+
+
+	db 128,128	
+
+;++++++++++++++++++++++++++++++++++++++=
+
+
+RC6A	
+	dw 0,0
+	dw car61A
+
+
+;		car points model rc6a
+;antipointers
+
+	db	28,-20	;0
+	db	-8,-20	;2
+	db	-18,-6	;4
+	db	-48,-4	;6
+	db	-50,13	;8
+	db	-35,8	;10
+	db	-40,10	;12
+	db	-40,16	;14
+	db	-35,17	;16
+	db	-30,10	;18
+	db	-30,16	;20
+	db	37,9	;22
+	db	31,11	;24
+	db	31,18	;26
+	db	36,20	;28
+	db	42,11	;30
+	DB	42,18	;32
+
+
+	
+	db 128,128
+	
+;clockpts	
+	db	33,-6	;64
+	db	56,-5	;66
+	db	56,13	;68
+	db	34,-6	;70
+	
+
+
+	db 128,128	
+
+;****************************************
+
+;          shape 1
+
+car61A	db 2  	;fill pattern
+	db ccp61A-cap61A    ;number of bytes in ANTIPTRS
+	db cle61A-ccp61A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap61A	db 0,2,4,64,128
+	
+ccp61A	db 0,64,128
+cle61A
+		
+	
+;********************************
+
+
+;          shape2
+
+car62A	db 3  	;fill pattern
+	db ccp62A-cap62A    ;number of bytes in ANTIPTRS
+	db cle62A-ccp62A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap62A	db 64,4,6,8,68,128
+	
+ccp62A	db 64,66,68,128
+cle62A
+				
+;********************************
+
+
+;          shape 3
+
+car63A	db 0	 	;fill pattern
+	db ccp63A-cap63A    ;number of bytes in ANTIPTRS
+	db cle63A-ccp63A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap63A	db 10,12,14,16,128
+	
+ccp63A	db 10,18,20,16,128
+cle63A
+
+	
+;********************************
+
+
+;          shape 4
+
+car64A	db 0	 	;fill pattern
+	db ccp64A-cap64A    ;number of bytes in ANTIPTRS
+	db cle64A-ccp64A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap64A	db 22,24,26,28,128
+	
+ccp64A	db 22,30,32,28,128
+cle64A
+	
+;********************************
+
+
+;          shape 5
+
+car65A	db 0  	;fill pattern
+	db ccp65A-cap65A    ;number of bytes in ANTIPTRS
+	db cle65A-ccp65A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap65A	db 0,64,70,128
+	
+ccp65A	db 0,70,128
+cle65A
+
+;********************************
+
+
+	DB 128,128
+
+
+
+RC7	
+	dw 0,0
+	dw car61A
+
+
+;		car points model rc7
+;antipointers
+
+	db	27,-21	;0
+	db	-11,-20	;2
+	db	-21,-6	;4
+	db	-48,-4	;6
+	db	-50,12	;8
+	db	-35,8	;10
+	db	-40,10	;12
+	db	-40,16	;14
+	db	-35,17	;16
+	db	-30,10	;18
+	db	-30,16	;20
+	db	34,10	;22
+	db	30,13	;24
+	db	30,20	;26
+	db	34,22	;28
+	db	40,12	;30
+	DB	40,20	;32
+
+
+	
+	db 128,128
+	
+;clockpts	
+	db	31,-6	;64
+	db	55,-5	;66
+	db	55,15	;68
+	db	35,-7	;70
+	
+
+
+	db 128,128	
+
+;**********************************
+
+
+
+rc7A	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc7a
+;antipointers
+
+	db	24,-21	;0
+	db	-13,-20	;2
+	db	-22,-6	;4
+	db	-46,-4	;6
+	db	-49,11	;8
+	db	30,-6	;10
+	db	54,-4	;12
+	db	54,17	;14
+	db	-36,8	;16
+	db	-40,10	;18
+	db	-40,15	;20
+	db	-36,17	;22
+	db	-32,10	;24
+	db	-32,15	;26
+	db	32,11	;28
+	db	27,13	;30
+	DB	27,21	;32
+	db	32,22	;34
+	db	37,13	;36
+	db	37,21	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	33,-18	;64
+	db	37,-6	;66
+	db	56,-4	;68
+	db	56,12	;70
+	db	54,0	;72
+	db	54,2	;74
+	db	55,0	;76
+	db	55,2	;78
+	db	54,0	;80
+	db	54,2	;82
+	DB	55,0	;84
+	DB	55,2	;86
+	
+	
+	
+
+	db 128,128	
+
+;*********************************************************	
+
+;          shape 1
+
+car71A	db 2  	;fill pattern
+	db ccp71A-cap71A    ;number of bytes in ANTIPTRS
+	db cle71A-ccp71A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap71A	db 0,2,4,128
+	
+ccp71A	db 0,10,4,128
+cle71A
+	
+		
+;********************************
+
+
+;          shape2
+
+car72A	db 3  	;fill pattern
+	db ccp72A-cap72A    ;number of bytes in ANTIPTRS
+	db cle72A-ccp72A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap72A	db 10,4,6,8,14,128
+	
+ccp72A	db 10,12,14,128
+cle72A
+			
+;********************************
+
+
+;          shape 3
+
+car73A	db 0	 	;fill pattern
+	db ccp73A-cap73A    ;number of bytes in ANTIPTRS
+	db cle73A-ccp73A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap73A	db 16,18,20,22,128
+	
+ccp73A	db 16,24,26,22,128
+cle73A	
+;********************************
+	
+
+;          shape 4
+
+car74A	db 0  	;fill pattern
+	db ccp74A-cap74A    ;number of bytes in ANTIPTRS
+	db cle74A-ccp74A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap74A	db 28,30,32,34,128
+	
+ccp74A	db 28,36,38,34,128
+cle74A
+;********************************
+
+
+;          shape 5
+
+car75A	db 0  	;fill pattern
+	db ccp75A-cap75A    ;number of bytes in ANTIPTRS
+	db cle75A-ccp75A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap75A	db 0,10,128
+	
+ccp75A	db 0,64,66,10,128
+cle75A
+		
+;********************************
+
+
+;          shape 6
+
+car76A	db 2  	;fill pattern
+	db ccp76A-cap76A    ;number of bytes in ANTIPTRS
+	db cle76A-ccp76A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap76A	db 66,10,12,128
+	
+ccp76A	db 66,68,12,128
+cle76A
+			
+;********************************
+
+;          shape 7
+
+car77A	db 3  	;fill pattern
+	db ccp77A-cap77A    ;number of bytes in ANTIPTRS
+	db cle77A-ccp77A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap77A	db 68,12,14,128
+	
+ccp77A	db 68,70,14,128
+cle77A
+;***************************************
+;	shape  8
+	
+
+
+car78A	db 2  	;fill pattern
+	db ccp78A-cap78A    ;number of bytes in ANTIPTRS
+	db cle78A-ccp78A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap78A	db 72,74,128
+	
+ccp78A	db 72,76,78,74,128
+cle78A
+;***************************************
+		
+
+;	shape  9
+	
+
+
+car79A	db 2  	;fill pattern
+	db ccp79A-cap79A    ;number of bytes in ANTIPTRS
+	db cle79A-ccp79A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap79A	db 80,82,128
+	
+ccp79A	db 80,84,86,82,128
+cle79A
+;***************************************
+	db 128,128
+
+
+
+rc8	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc8
+;antipointers
+
+	db	21,-22	;0
+	db	-14,-21	;2
+	db	-23,-6	;4
+	db	-46,-4	;6
+	db	-47,11	;8
+	db	26,-6	;10
+	db	51,-4	;12
+	db	51,19	;14
+	db	-36,7	;16
+	db	-39,8	;18
+	db	-39,15	;20
+	db	-36,17	;22
+	db	-33,9	;24
+	db	-33,15	;26
+	db	29,12	;28
+	db	23,13	;30
+	DB	24,23	;32
+	db	29,25	;34
+	db	34,15	;36
+	db	34,23	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	36,-20	;64
+	db	40,-6	;66
+	db	60,-4	;68
+	db	60,12	;70
+	db	54,-1	;72
+	db	54,3	;74
+	db	55,0	;76
+	db	55,2	;78
+	db	56,-1	;80
+	db	56,3	;82
+	DB	57,0	;84
+	DB	57,2	;86
+	
+	
+	
+
+	db 128,128	
+
+
+
+
+
+rc8A	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc8a
+;antipointers
+
+	db	16,-23	;0
+	db	-17,-21	;2
+	db	-25,-6	;4
+	db	-45,-4	;6
+	db	-46,9	;8
+	db	21,-6	;10
+	db	46,-3	;12
+	db	46,22	;14
+	db	-36,7	;16
+	db	-38,8	;18
+	db	-38,14	;20
+	db	-36,17	;22
+	db	-33,8	;24
+	db	-33,15	;26
+	db	24,13	;28
+	db	19,14	;30
+	DB	19,24	;32
+	db	25,26	;34
+	db	29,16	;36
+	db	29,25	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	37,-19	;64
+	db	42,-6	;66
+	db	63,-3	;68
+	db	63,14	;70
+	db	49,0	;72
+	db	49,7	;74
+	db	53,0	;76
+	db	53,5	;78
+	db	59,0	;80
+	db	59,5	;82
+	DB	61,0	;84
+	DB	61,3	;86
+	
+	
+	
+
+	db 128,128	
+
+
+
+
+
+
+
+rc9	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc9
+;antipointers
+
+	db	11,-23	;0
+	db	-19,-21	;2
+	db	-24,-6	;4
+	db	-42,-4	;6
+	db	-42,9	;8
+	db	15,-6	;10
+	db	39,-3	;12
+	db	39,23	;14
+	db	-34,7	;16
+	db	-36,9	;18
+	db	-36,13	;20
+	db	-34,16	;22
+	db	-32,9	;24
+	db	-32,13	;26
+	db	18,13	;28
+	db	13,15	;30
+	DB	13,26	;32
+	db	18,29	;34
+	db	24,17	;36
+	db	23,26	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	39,-21	;64
+	db	42,-6	;66
+	db	63,-3	;68
+	db	63,15	;70
+	db	41,2	;72
+	db	41,10	;74
+	db	49,2	;76
+	db	49,9	;78
+	db	57,2	;80
+	db	57,9	;82
+	DB	61,2	;84
+	DB	61,8	;86
+	
+	
+	
+
+	db 128,128	
+
+
+
+rc9A	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc9a
+;antipointers
+
+	db	5,-23	;0
+	db	-20,-21	;2
+	db	-24,-6	;4
+	db	-37,-5	;6
+	db	-38,8	;8
+	db	9,-6	;10
+	db	30,-3	;12
+	db	30,25	;14
+	db	-32,6	;16
+	db	-34,8	;18
+	db	-34,13	;20
+	db	-32,15	;22
+	db	-29,9	;24
+	db	-29,14	;26
+	db	12,14	;28
+	db	7,16	;30
+	DB	7,27	;32
+	db	11,30	;34
+	db	15,18	;36
+	db	15,28	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	39,-22	;64
+	db	42,-6	;66
+	db	63,-3	;68
+	db	63,18	;70
+	db	32,2	;72
+	db	32,11	;74
+	db	41,2	;76
+	db	41,10	;78
+	db	54,2	;80
+	db	54,9	;82
+	DB	61,2	;84
+	DB	61,7	;86
+	
+	
+	
+
+	db 128,128	
+
+
+
+
+
+rc10	
+	dw 0,0
+	dw car71A
+		
+;****************************************************
+;		car points model rc10
+;antipointers
+
+ 	db	2,-23	;0
+	db	-16,-20	;2
+	db	-19,-6	;4
+	db	-30,-5	;6
+	db	-30,5	;8
+	db	4,-6	;10
+	db	20,-3	;12
+	db	20,25	;14
+	db	-24,4	;16
+	db	-25,6	;18
+	db	-25,11	;20
+	db	-24,12	;22
+	db	-22,7	;24
+	db	-22,10	;26
+	db	6,12	;28
+	db	2,15	;30
+	DB	2,22	;32
+	db	6,27	;34
+	db	8,16	;36
+	db	8,22	;38
+
+	
+	db 128,128
+	
+;clockpts	
+	db	36,-22	;64
+	db	39,-6	;66
+	db	57,-5	;68
+	db	57,18	;70
+	db	23,1	;72
+	db	23,9	;74
+	db	34,2	;76
+	db	34,9	;78
+	db	45,1	;80
+	db	45,9	;82
+	DB	53,2	;84
+	DB	53,7	;86
+	
+	
+	
+
+	db 128,128	
+
+;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+rc10A
+	dw 0,0
+
+	dw car101A
+		
+;****************************************************
+;		car points model rc10a
+;antipointers
+
+	db	-5,-24	;0
+	db	-18,-20	;2
+	db	-21,-6	;4
+	db	-27,-5	;6
+	db	-27,6	;8
+	db	-24,4	;10
+	db	-25,7	;12
+	db	-25,11	;14
+	db	-24,13	;16
+	db	-22,8	;18
+	db	-22,12	;20
+	db	-3,12	;22
+	db	-5,15	;24
+	db	-4,24	;26
+	db	-3,28	;28
+	db	-1,14	;30
+	DB	0,24	;32
+	db	9,3	;34
+	db	9,11	;36
+	db	23,3	;38
+	DB	23,10	;40
+	DB	40,2	;42
+	DB	40,9	;44
+	DB	52,2	;46
+	DB	52,8	;48
+	DB	36,22	;50
+	DB	37,24	;52
+	DB	43,21	;54
+	DB	42,23	;56
+
+	
+	db 128,128
+	
+;clockpts	
+	db	35,-22	;64
+	db	38,-6	;66
+	db	-1,-6	;68
+	db	7,-4	;70
+	db	54,-4	;72
+	db	54,20	;74
+	db	7,24	;76
+	
+
+	db 128,128	
+
+;*********************************************************	
+
+;          shape 1
+
+car101A	db 2  	;fill pattern
+	db ccp101A-cap101A    ;number of bytes in ANTIPTRS
+	db cle101A-ccp101A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap101A	db 0,2,4,128
+	
+ccp101A	db 0,68,4,128
+cle101A
+	
+;********************************
+
+
+;          shape2
+
+car102A	db 3  	;fill pattern
+	db ccp102A-cap102A    ;number of bytes in ANTIPTRS
+	db cle102A-ccp102A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap102A	db 68,4,6,8,76,128
+	
+ccp102A	db 68,70,76,128
+cle102A
+			
+;********************************
+
+
+;          shape 3
+
+car103A	db 0	 	;fill pattern
+	db ccp103A-cap103A    ;number of bytes in ANTIPTRS
+	db cle103A-ccp103A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap103A	db 0,68,128
+	
+ccp103A	db 0,64,66,68,128
+cle103A	
+;********************************
+	
+
+;          shape 4
+
+car104A	db 3  	;fill pattern
+	db ccp104A-cap104A    ;number of bytes in ANTIPTRS
+	db cle104A-ccp104A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap104A	db 72,70,76,128
+	
+ccp104A	db 72,74,76,128
+cle104A
+;********************************
+
+
+;          shape 5
+
+car105A	db 0  	;fill pattern
+	db ccp105A-cap105A    ;number of bytes in ANTIPTRS
+	db cle105A-ccp105A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap105A	db 10,12,14,16,128
+	
+ccp105A	db 10,18,20,16,128
+cle105A
+		
+;********************************
+
+
+;          shape 6
+
+car106A	db 0  	;fill pattern
+	db ccp106A-cap106A    ;number of bytes in ANTIPTRS
+	db cle106A-ccp106A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap106A	db 22,24,26,28,128
+	
+ccp106A	db 22,30,32,28,128
+cle106A
+			
+;********************************
+
+;          shape 7
+
+car107A	db 2  	;fill pattern
+	db ccp107A-cap107A    ;number of bytes in ANTIPTRS
+	db cle107A-ccp107A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap107A	db 34,36,128
+	
+ccp107A	db 34,38,40,36,128
+cle107A
+
+
+;***************************************
+;	shape  8
+	
+
+
+car108A	db 2  	;fill pattern
+	db ccp108A-cap108A    ;number of bytes in ANTIPTRS
+	db cle108A-ccp108A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap108A	db 42,44,128
+	
+ccp108A	db 42,46,48,44,128
+cle108A
+;***************************************
+		
+
+;	shape  9
+	
+
+
+car109A	db 0  	;fill pattern
+	db ccp109A-cap109A    ;number of bytes in ANTIPTRS
+	db cle109A-ccp109A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap109A	db 54,50,52,128
+	
+ccp109A	db 54,56,52,128
+cle109A
+;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+;	shape  10
+
+
+car1010A	db 2  	;fill pattern
+	db ccp1010A-cap1010A    ;number of bytes in ANTIPTRS
+	db cle1010A-ccp1010A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap1010A	db 66,68,70,128
+	
+ccp1010A	db 66,72,70,128
+cle1010A
+
+	DB 128,128
+;***************************************
+	db 128,128
+
+
+
+rc11	
+	dw 0,0
+	dw car101A
+		
+;****************************************************
+;		car points model rc11
+;antipointers
+
+	db	-12,-21	;0
+	db	-18,-17	;2
+	db	-18,-5	;4
+	db	-22,-3	;6
+	db	-22,7	;8
+	db	-19,7	;10
+	db	-20,8	;12
+	db	-20,11	;14
+	db	-19,14	;16
+	db	-18,9	;18
+	db	-18,13	;20
+	db	-10,12	;22
+	db	-12,14	;24
+	db	-11,21	;26
+	db	-11,26	;28
+	db	-9,15	;30
+	DB	-9,23	;32
+	db	-3,3	;34
+	db	-3,10	;36
+	db	11,3	;38
+	DB	11,10	;40
+	DB	30,2	;42
+	DB	30,9	;44
+	DB	42,2	;46
+	DB	42,9	;48
+	DB	31,22	;50
+	DB	31,24	;52
+	DB	36,22	;54
+	DB	36,24	;56
+
+	
+	db 128,128
+	
+;clockpts	
+	db	31,-20	;64
+	db	34,-6	;66
+	db	-11,-6	;68
+	db	-6,-3	;70
+	db	45,-3	;72
+	db	45,21	;74
+	db	-6,23	;76
+	
+
+	db 128,128	
+
+
+
+rc11a	dw 0,0
+	dw car111A
+		
+;****************************************************
+;		car points model rc11a
+;antipointers
+
+	db	-16,-21	;0
+	db	-16,-6	;2
+	db	-16,-3	;4
+	db	-16,22	;6
+	db	-16,22	;8
+	db	-16,26	;10
+	db	-12,22	;12
+	db	-11,25	;14
+	db	-14,2	;16
+	db	-14,9	;18
+	db	 1,2	;20
+	db	 1,9	;22
+	
+	db 128,128
+	
+;clockpts	
+	db   27,-20	;64
+	db    0,0         ;66
+	db	28,-6       ;68
+	db	37,-3	;70
+	db	37,21	;72
+	db	25,21	;74
+	db	26,24	;76
+	db    31,21       ;78
+           db    31,24       ;80
+	db	20,2	;82
+	db	20,9	;84
+	db	34,2	;86
+	db	34,8	;88
+	db 128,128	
+
+;*********************************************************	
+
+;          shape 1
+
+car111A	db 0  	;fill pattern
+	db ccp111A-cap111A    ;number of bytes in ANTIPTRS
+	db cle111A-ccp111A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap111A	db 0,2,128
+	
+ccp111A	db 0,64,68,128
+cle111A
+	
+;********************************
+
+
+;          shape2
+
+car112A	db 2  	;fill pattern
+	db ccp112A-cap112A    ;number of bytes in ANTIPTRS
+	db cle112A-ccp112A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap112A	db 2,4,128
+	
+ccp112A	db 2,68,70,128
+cle112A
+			
+;********************************
+
+
+;          shape 3
+
+car113A	db 3	 	;fill pattern
+	db ccp113A-cap113A    ;number of bytes in ANTIPTRS
+	db cle113A-ccp113A    ;number of bytes in CLOCKPTRS
+	db 0,0,0,0
+
+cap113A	db 4,6,128
+	
+ccp113A	db 4,70,72,6,128
+cle113A	
+;********************************
+	
+;          shape 4
+
+car114A	db 0 
+	db ccp114A-cap114A 
+	db cle114A-ccp114A
+	db 0,0,0,0
+
+cap114A	db 8,10,128
+	
+ccp114A	db 8,12,14,128
+cle114A
+;********************************
+	
+
+;          shape 5
+
+car115A	db 0
+	db ccp115A-cap115A 
+	db cle115A-ccp115A  
+	db 0,0,0,0
+
+cap115A	db 74,76,128
+	
+ccp115A	db 78,80,128
+cle115A
+	
+;********************************
+
+
+;          shape 6
+
+car116A	db 2  
+	db ccp116A-cap116A
+	db cle116A-ccp116A  
+	db 0,0,0,0
+
+cap116A	db 16,18,128
+	
+ccp116A	db 16,20,22,128
+cle116a			
+;********************************
+
+;          shape 7
+
+car117A	db 2  	
+	db ccp117A-cap117A    
+	db cle117A-ccp117A  
+	db 0,0,0,0
+
+cap117A	db 82,84,128
+	
+ccp117A	db 82,86,88,84,128
+cle117A
+
+
+	db 128,128
+
+;'''''''''''''''''''''''''''''''
+
+
+rc12
+	dw 0,0
+	dw car111A
+		
+;****************************************************
+;		car points model rc11a
+;antipointers
+
+	db	-19,-20	;0
+	db	-20,-6	;2
+	db	-24,-3	;4
+	db	-24,21	;6
+	db	-21,21	;8
+	db	-21,24	;10
+	db	-16,21	;12
+	db	-16,24	;14
+	db	-22,2	;16
+	db	-22,9	;18
+	db	-9,2	;20
+	db	-9,9	;22
+	
+	db 128,128
+	
+;clockpts	
+	db   23,-20	;64
+	db    0,0         ;66
+	db	24,-6       ;68
+	db	28,-3	;70
+	db	28,21	;72
+	db	21,21	;74
+	db	21,24	;76
+	db    26,21       ;78
+           db    25,24       ;80
+	db	11,2	;82
+	db	11,8	;84
+	db	25,2	;86
+	db	25,8	;88
+	db 128,128	
+
+
+
+
+car1d
+	dw Rc0
+	db 0,0
+
+
+	dw RC0a
+	db 0,0
+
+
+	dw RC1
+	db 0,0
+
+
+	dw RC1a
+	db 0,0
+
+
+	dw RC2
+	db 0,0
+
+
+
+	dw RC2a
+	db 0,0
+
+
+	dw RC3
+	db 0,0
+
+	dw RC3a
+	db 0,0
+
+
+	dw RC4
+ 	db 0,0
+
+
+	dw RC4a
+	db 0,0
+
+
+	dw RC5
+	db 0,0
+
+	
+
+	dw RC5a
+	db 0,0
+
+
+	dw RC6
+	db 0,0
+
+
+	dw RC6a
+	db 0,0
+
+
+
+	dw RC7
+	db 0,0
+
+
+	
+	
+
+	dw RC7A
+	db 0,0
+
+
+	dw RC8
+	db 0,0
+
+
+
+
+	dw RC8A
+	db 0,0
+
+
+
+
+	dw RC9
+	db 0,0
+
+
+	dw RC9a
+	db 0,0
+
+
+
+	dw RC10
+	db 0,0
+
+
+	dw RC10A
+	db 0,0
+
+
+
+	dw RC11
+	db 0,0
+
+
+
+	dw RC11a
+	db 0,0
+
+
+
+	dw RC12
+	db 0,0
+
+
+	dw RC11a
+	db $81,0
+	
+	dw RC11
+	db $81,0
+
+	dw RC10a
+	db $81,0
+	
+	dw RC10
+	db $81,0
+
+	dw RC9a
+	db $81,0
+
+	dw RC9
+	db $81,0
+
+	dw RC8a
+	db $81,0
+
+	dw RC8
+	db $81,0
+
+	dw RC7a
+	db $81,0
+
+	dw RC7
+	db $81,0
+
+	dw RC6a
+	db $81,0
+
+	dw RC6
+	db $81,0
+	
+	dw RC5a
+	db $81,0 
+
+	dw RC5
+	db $81,0
+	
+	dw RC4a
+	db $81,0
+
+	dw RC4
+	db $81,0
+		
+	dw RC3a
+	db $81,0
+
+	dw RC3
+	db $81,0
+	
+	dw RC2a
+	db $81,0
+
+	dw RC2
+	db $81,0
+		
+	dw RC1a
+	db $81,0	
+
+	dw RC1
+	db $81,0
+	
+	
+	dw rc0a
+	db $81,0
+	
+	

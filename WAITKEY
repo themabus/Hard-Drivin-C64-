@@ -1,0 +1,11 @@
+waitkey    jsr $ea87
+
+	lda $c5
+	cmp #60
+	bne waitkey
+
+w2	jsr $ea87
+	lda $c5
+	cmp #60
+	beq w2
+	rts

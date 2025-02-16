@@ -1,0 +1,493 @@
+
+;	signpost data here
+
+
+rxp0	db 10,14
+	db 18,8
+	dw xp01
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 6,-4	;0
+	db -6,-4	;2
+	db -6,8	;4
+	db 6,8	;6
+	db 0,-21	;8
+	db -8,-13	;10
+	db 0,-4	;12
+	db 8,-13	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128	
+;*********************************************************	
+
+;          polygon main shape
+
+xp01	db 3  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 10		  ;biggest anti-clockwise point
+	db 14		  ;biggest clockwise point
+	db 12
+	db 8
+
+!gap00	db 8,10,12,128
+	
+!gcp00	db 8,14,12,128
+!gle00
+
+
+;          polygon main shape
+
+;*****************************************************
+
+
+
+xp03	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 16		  ;biggest anti-clockwise point
+	db 20		  ;biggest clockwise point
+	db 18,16
+
+
+!gap00	db 16,18,128
+	
+!gcp00	db 20,22,128
+!gle00
+
+xp02	db 3  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 0	 	  ;biggest clockwise point
+	db 4,0
+
+!gap00	db 2,4,128
+	
+!gcp00	db 0,6,128
+!gle00
+
+;***********************************
+
+	db 128,128
+;***********************************
+
+
+
+rxp1	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 6,-5	;0
+	db -6,-4	;2
+	db -6,8	;4
+	db 6,8	;6
+	db 0,-21	;8
+	db -8,-13	;10
+	db 0,-4	;12
+	db 7,-13	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+
+	
+;*********************************************************	
+
+;          polygon main shape
+
+xp11	db 3  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 10		  ;biggest anti-clockwise point
+	db 14		  ;biggest clockwise point
+	db 12,8
+
+!gap00	db 8,10,12,128
+	
+!gcp00	db 8,14,12,128
+!gle00
+
+
+;          polygon main shape
+
+;*****************************************************
+
+;***********************************
+
+
+xp13	db 1  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 16		  ;biggest anti-clockwise point
+	db 20		  ;biggest clockwise point
+	db 18,16
+
+
+!gap00	db 16,18,128
+	
+!gcp00	db 20,22,128
+!gle00
+
+
+xp12	db 3  	;fill pattern
+	db !gcp00-!gap00    ;number of bytes in ANTIPTRS
+	db !gle00-!gcp00    ;number of bytes in CLOCKPTRS
+	db 2		  ;biggest anti-clockwise point
+	db 0	 	  ;biggest clockwise point
+	db 4,0
+
+!gap00	db 0,2,4,6,128
+	
+!gcp00	db 0,6,128
+!gle00
+
+
+
+	db 128,128
+;***********************************
+
+
+rxp2	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 6,-4	;0
+	db -6,-4	;2
+	db -6,7	;4
+	db 6,8	;6
+	db 0,-22	;8
+	db -8,-13	;10
+	db 0,-4	;12
+	db 7,-14	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+
+rxp3	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 6,-4	;0
+	db -5,-4	;2
+	db -5,7	;4
+	db 6,8	;6
+	db 0,-21	;8
+	db -7,-12	;10
+	db 0,-4	;12
+	db 8,-14	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+
+
+
+rxp4	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 5,-4	;0
+	db -4,-4	;2
+	db -4,7	;4
+	db 5,8	;6
+	db 0,-21	;8
+	db -6,-12	;10
+	db 0,-4	;12
+	db 6,-14	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+
+
+
+rxp5	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 5,-5	;0
+	db -4,-4	;2
+	db -4,7	;4
+	db 5,9	;6
+	db 0,-21	;8
+	db -6,-12	;10
+	db 0,-5	;12
+	db 7,-15	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+
+
+rxp6	db 10,14
+	db 18,8
+	dw xp11
+		
+;****************************************************
+;		sign points
+;antipts
+
+	DB 4,-5	;0
+	db -4,-4	;2
+	db -4,7	;4
+	db 4,9	;6
+	db 0,-21	;8
+	db -6,-11	;10
+	db 0,-5	;12
+	db 7,-15	;14
+
+	db -1,8	;16
+	db -1,17	;18
+	db 1,8	;20
+	db 1,17	;22
+
+	db 128,128
+	
+;clockpts	
+
+	db 128,128
+
+sex equ 1
+cm  equ 44
+
+signpost
+
+	dw rxp0
+	db 0,0
+
+	dw rxp1
+	db 0,0
+
+
+	dw rxp2
+	db 0,0
+
+
+	dw rxp3
+	db 0,0
+
+
+	dw rxp4
+	db 0,0
+
+
+	dw rxp5
+	db 0,0
+
+
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	 
+	dw rxp6
+	db 0,0
+
+	dw rxp6
+	db 1,0
+
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+	dw rxp6
+	db 1,0
+
+
+	dw rxp5
+	db 1,0
+
+	dw rxp4
+	db 1,0
+
+	dw rxp3
+	db 1,0
+
+	dw rxp2
+	db 1,0
+
+	dw rxp1
+	db 1,0

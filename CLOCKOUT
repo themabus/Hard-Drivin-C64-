@@ -1,0 +1,138 @@
+
+
+	org $1000
+
+	jmp here
+	
+base	equ $3000
+	
+pos_tab1	db <$0400,<$0408,<$0410,<$0418,<$0420
+	db <$04a0,<$04a8,<$04b0,<$04b8,<$04c0
+	db <$0540,<$0548,<$0550,<$0558,<$0560
+	db <$05e0,<$05e8,<$05f0,<$05f8,<$0600
+
+pos_tab2	db >$0400,>$0408,>$0410,>$0418,>$0420
+	db >$04a0,>$04a8,>$04b0,>$04b8,>$04c0
+	db >$0540,>$0548,>$0550,>$0558,>$0560
+	db >$05e0,>$05e8,>$05f0,>$05f8,>$0600
+
+bnum2	db 0
+	
+bnum	db 01,03,04,03,05
+	db 06,10,11,13,14
+	db 07,09,12,15,16
+	db 08,08,08,08,08
+	
+here
+	lda #28
+	sta 53272
+
+	lda #$d8
+	sta 53270	
+
+	ldx #0
+	stx 53280
+	stx 53281
+	
+	lda #14
+bu	sta $d800,x
+	sta $d900,x
+	inx
+	bne bu
+
+	lda #5
+	sta $d022
+
+	lda #1
+	sta $d023
+loop3	
+	lda pos_tab1,x
+	sta $fa
+	
+	lda pos_tab2,x
+	sta $fb
+	
+	lda bnum,x
+	sta bnum2
+
+	and #248
+	lsr
+	lsr
+	lsr
+	adc #$80
+	sta $fd
+	
+	lda bnum,x
+	and #7
+	rol
+	rol
+	rol
+	rol
+	rol
+	sta $fc
+	
+	txa
+	pha
+	
+	ldx #0
+loop2	ldy #0
+	
+loop1
+	lda $fb
+	clc
+	adc #$d4
+	sta $ff
+	
+	lda $fa
+	sta $fe
+
+	lda ($fc),y
+	sta ($fa),y
+
+	txa
+	pha
+	ldx bnum2
+	
+	lda $9000,x
+	ora #8
+	sta ($fe),y
+	
+	pla
+	tax
+	
+	iny
+	cpy #8
+	bne loop1
+	
+	lda $fa
+	clc
+	adc #40
+	sta $fa
+	
+	lda $fb
+	adc #0
+	sta $fb
+	
+	lda $fc
+	clc
+	adc #8
+	sta $fc
+	
+	lda $fd
+	adc #0
+	sta $fd
+	
+	inx
+	cpx #4
+	bne loop2
+	
+	pla
+	tax
+	inx
+	cpx #20
+	bne loop3
+	rts
+	
+	send computer1
+	end here
+	

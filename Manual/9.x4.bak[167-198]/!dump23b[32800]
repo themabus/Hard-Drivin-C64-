@@ -1,0 +1,32 @@
+***************************************************************
+
+fxp?	dc.l crowdin7,0,crowdloop7,0,crowdout7,0,255,0
+fxp?	dc.l crowdin9,0,crowdloop9,0,crowdloop9,0,crowdout9,0,255,0
+fxp?	dc.l crowdin11,0,crowdloop11,0,crowdloop11,0,crowdloop11,0,crowdout11,0,255,0
+fxp?	dc.l camera,0,255,0
+fxp?	dc.l startpist,0,255,0
+
+
+
+crowdin7	dc.l	7,sb,sb+7670
+crowdloop7	dc.l	7,sb+7670,sb+7670+8142
+crowdout7	dc.l	7,sb+7670+8142,sb+7670+8142+7670
+
+
+crowdin9	dc.l	9,sb,sb+7670
+crowdloop9	dc.l	9,sb+7670,sb+7670+8142
+crowdout9	dc.l	9,sb+7670+8142,sb+7670+8142+7670
+
+
+crowdin11	dc.l	11,sb,sb+7670
+crowdloop11	dc.l	11,sb+7670,sb+7670+8142
+crowdout11	dc.l	11,sb+7670+8142,sb+7670+8142+7670
+
+camera		dc.l	8,sb+23483,sb+23483+9504
+startpist	dc.l	4,sb+32987,sb+32987+1140
+
+sb		incbin b:sampleb2.sam
+
+*************************************************************
+
+„ˆ‡{acmvŽ–¡£j+6­ÅŒT_µ±tfZptv~˜‚Vi“’–}_Uq¬ŸbKUxš¢†hmš£f3¶í–8bÂÈ‡V{¯=P‘‘f†·{>Z‚Œrukd †RO~­Žpv±Ø@2]µÅ”QS®Øž/T¢°JGŠçÁ_/jªuAY’}€do¤¯‡ct†ÿÿýþÿÿÿ
